@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/myface.jpg" style="width:50%;">
-    <HelloWorld msg="Welcome to mah dang portfolio!"/>
+    <Banner msg="Welcome to mah dang portfolio! {Banner}"/>
+    <NavPanel msg="This portion is the navigation panel."/>
+    <SectionContent msg="This portion is for section content."/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Banner from './components/Banner.vue';
+import NavPanel from './components/NavPanel.vue';
+import SectionContent from './components/SectionContent.vue';
+
+// Alert disabled for testing
+window.alert('This website is under construction.\nStart Date: 12/8/2018  \n Approximate End Date: 12/29/2018');
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    Banner,
+    NavPanel,
+    SectionContent,
   },
 };
 </script>
@@ -22,7 +30,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: bisque;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
  <p>
-   This is a test...
+   {{ msg }}
  </p>
 </template>
 

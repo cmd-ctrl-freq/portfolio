@@ -2,11 +2,10 @@
  <div>
    <ul>
      <li>
-       <p>About Me</p>
-
+       <p @click="updatePage(aboutMeBanner)">About Me</p>
      </li>
      <li>
-       <p>Projects</p>
+       <p @click="updatePage(projectBanner)">Projects</p>
      </li>
      <li>
        <p>Experience</p>
@@ -17,15 +16,20 @@
 </template>
 
 <script>
+import updateBanner from './Banner.vue';
+
 export default {
   name: 'NavPanel',
-  props: {
-    msg: String,
-  },
   data() {
-    return {
-      selection: 'This is the current selection',
-    };
+    return{
+      aboutMeBanner: require('../assets/404.gif'),
+      projectBanner: require('../assets/myface.jpg'),
+    }
+  },
+  methods: {
+    updatePage(newImage){
+      updateBanner(newImage);
+    },
   },
 };
 </script>
@@ -37,12 +41,14 @@ h3 {
 ul {
   list-style-type: none;
   padding: 40;
+  border: #000000;
+  border-style: solid;
+  border-radius: 4px;
 }
 li {
   display: inline-block;
-  border: #000000;
-  border-style: solid; 
-  margin: .25em .5em .25em .5em;
+  margin: 0 2em 0 0;
+  font-size: 1.2em; 
 }
 a {
   color: #42b983;

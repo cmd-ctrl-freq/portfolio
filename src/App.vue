@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Banner msg="Welcome to mah dang portfolio! {Banner}"/>
-    <NavPanel msg="This portion is the navigation panel."/>
+    <Banner/>
+    <NavPanel/>
     <SectionContent msg="This portion is for section content."/>
   </div>
 </template>

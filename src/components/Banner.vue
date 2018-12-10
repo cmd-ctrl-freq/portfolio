@@ -1,21 +1,26 @@
 <template>
  <div>
-   <img alt="Vue logo" :src="myface"  style="height:15em">
+   <img alt="Banner Image" :src="bannerImage"  style="height:15em">
  </div>
 </template>
 
 <script>
+
 export default {
   name: 'Banner',
-  props: {
-    msg: String,
-  },
   data() {
     return {
-      myface: require('../assets/myface.jpg'),
+      bannerImage: require('../assets/404.gif'),
     };
   },
+  methods: {
+    updateBanner(newImage) {
+      console.log('Banner image updated');
+      bannerImage = newImage;
+    },
+  },
 };
+
 </script>
 
 <style scoped>

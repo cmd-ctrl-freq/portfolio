@@ -1,7 +1,6 @@
 <template>
  <div>
-   <img alt="Vue logo" :src="myface"  style="width:50%;">
-   <p> {{ msg }} </p>
+   <img alt="Vue logo" :src="myface"  style="height:15em">
  </div>
 </template>
 

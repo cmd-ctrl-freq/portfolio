@@ -2,7 +2,7 @@
   <div id="app">
     <Banner/>
     <NavPanel/>
-    <SectionContent msg="This portion is for section content."/>
+    <SectionContent/>
   </div>
 </template>
 

@@ -2,10 +2,10 @@
  <div>
    <ul>
      <li>
-       <p @click="updatePage(aboutMeBanner)">About Me</p>
+       <p onclick="testfun" >About Me</p>
      </li>
      <li>
-       <p @click="updatePage(projectBanner)">Projects</p>
+       <p>Projects</p>
      </li>
      <li>
        <p>Experience</p>
@@ -16,21 +16,17 @@
 </template>
 
 <script>
-import updateBanner from './Banner.vue';
-
 export default {
   name: 'NavPanel',
   data() {
     return{
-      aboutMeBanner: require('../assets/404.gif'),
-      projectBanner: require('../assets/myface.jpg'),
     }
   },
   methods: {
-    updatePage(newImage){
-      updateBanner(newImage);
-    },
-  },
+    testfun() {
+      console.log('The About Me button was clicked.');
+    }
+  }
 };
 </script>
 

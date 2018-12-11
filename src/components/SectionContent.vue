@@ -1,14 +1,11 @@
 <template>
- <p>
-   {{ msg }}
- </p>
+ <p> the section content goes here.</p>
 </template>
 
 <script>
 export default {
   name: 'SectionContent',
   props: {
-    msg: String,
   },
 };
 </script>

@@ -13,12 +13,6 @@ export default {
       bannerImage: require('../assets/404.gif'),
     };
   },
-  methods: {
-    updateBanner(newImage) {
-      console.log('Banner image updated');
-      bannerImage = newImage;
-    },
-  },
 };
 
 </script>

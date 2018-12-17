@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-layout>
-      <v-flex xs12 sm6 offset-sm3>
+      <v-flex>
         <v-card>
-          <v-img src="" alt="Image failed to load." aspect-ratio="2.75"></v-img>
+          <v-img :src="bannerImg" alt="Image failed to load." aspect-ratio="2.75" max-height="15em"></v-img>
           <v-toolbar>
             <v-toolbar-title class="text-uppercase">
               <span>David Fentz</span>
@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      //
+      bannerImg: require('./assets/myface.jpg'),
     };
   },
 };

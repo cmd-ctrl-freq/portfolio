@@ -1,32 +1,44 @@
 <template>
-  <div id="app">
-    <NavPanel/>
-  </div>
+  <v-app>
+    <v-layout>
+      <v-flex xs12 sm6 offset-sm3>
+        <v-card>
+          <v-img src="" alt="Image failed to load." aspect-ratio="2.75"></v-img>
+          <v-toolbar>
+            <v-toolbar-title class="text-uppercase">
+              <span>David Fentz</span>
+              <span class="font-weight-light"> Portfolio</span>
+            </v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn
+              flat
+              target="_blank"
+            >
+              <span class="mr-2">Example Button</span>
+            </v-btn>
+          </v-toolbar>
+          <v-content>
+            <HelloWorld/>
+          </v-content>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-app>
 </template>
 
 <script>
-import NavPanel from './components/NavPanel.vue';
+import HelloWorld from './components/HelloWorld.vue';
 
-
-// Alert disabled for testing
-window.alert('This website is under construction.\nStart Date: 12/8/2018  \n Approximate End Date: 12/29/2018');
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    NavPanel,
+    HelloWorld,
+  },
+  data() {
+    return {
+      //
+    };
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-color: bisque;
-  color: #2c3e50;
-  margin-top: 0px;
-}
-</style>

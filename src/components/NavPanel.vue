@@ -59,6 +59,7 @@ li {
   display: inline-block;
   margin: 0 2em 0 0;
   font-size: 1.2em; 
+  cursor: pointer;
 }
 a {
   color: #42b983;

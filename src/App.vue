@@ -2,9 +2,8 @@
   <v-app>
     <v-layout>
       <v-flex>
-        <v-card>
           <v-img :src="bannerImg" alt="Image failed to load." aspect-ratio="2.75" max-height="15em"></v-img>
-          <v-toolbar>
+          <v-toolbar inverted-scroll>
             <v-toolbar-title class="text-uppercase">
               <span>David Fentz</span>
               <span class="font-weight-light"> Portfolio</span>
@@ -14,9 +13,22 @@
               flat
               target="_blank"
             >
-              <span class="mr-2">Example Button</span>
+              <span class="mr-2">About Me</span>
+            </v-btn>
+            <v-btn
+              flat
+              target="_blank"
+            >
+              <span class="mr-2">Projects</span>
+            </v-btn>
+            <v-btn
+              flat
+              target="_blank"
+            >
+              <span class="mr-2">Experiences</span>
             </v-btn>
           </v-toolbar>
+        <v-card>
           <v-content>
             <HelloWorld/>
           </v-content>

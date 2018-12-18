@@ -2,8 +2,24 @@
   <v-app>
     <v-layout>
       <v-flex>
-          <v-img :src="bannerImg" alt="Image failed to load." aspect-ratio="2.75" max-height="15em"></v-img>
-          <v-toolbar inverted-scroll>
+        <div v-if="currentSelection === 'About Me'">
+          <v-parallax :src="bannerImg1"></v-parallax>
+        </div>
+        <div v-else-if="currentSelection === 'Projects'">
+          Project Parallax
+        </div>
+        <div v-else-if="currentSelection === 'Experience'">
+          Experience Parallax
+        </div>
+          <v-layout
+            align-center
+            column
+            justify-center
+          >
+            <h1 class="display-2 font-weight-thin mb-3">Banner</h1>
+            <h4 class="subheading">Something explaining this banner!</h4>
+        </v-layout>
+          <v-toolbar >
             <v-toolbar-title class="text-uppercase">
               <span>David Fentz</span>
               <span class="font-weight-light"> Portfolio</span>
@@ -12,45 +28,66 @@
             <v-btn
               flat
               target="_blank"
+              @click='currentSelection="About Me"'
             >
               <span class="mr-2">About Me</span>
             </v-btn>
             <v-btn
               flat
               target="_blank"
+              @click='currentSelection="Projects"'
             >
               <span class="mr-2">Projects</span>
             </v-btn>
             <v-btn
               flat
               target="_blank"
+              @click='currentSelection="Experience"'
             >
-              <span class="mr-2">Experiences</span>
+              <span class="mr-2">Experience</span>
             </v-btn>
           </v-toolbar>
         <v-card>
-          <v-content>
-            <HelloWorld/>
+          <v-content v-if="currentSelection === 'About Me'">
+            <AboutMe/>
+          </v-content>
+          <v-content v-if="currentSelection === 'Experience'">
+            <Experience/>
+          </v-content>
+          <v-content v-if="currentSelection === 'Projects'">
+            <Projects/>
           </v-content>
         </v-card>
+        <v-list>
+          <!-- important links go here -->
+        </v-list>
       </v-flex>
     </v-layout>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-
+import AboutMe from './components/AboutMe.vue';
+import Projects from './components/Experience.vue';
+import Experience from './components/Projects.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    AboutMe,
+    Projects,
+    Experience,
   },
   data() {
     return {
-      bannerImg: require('./assets/myface.jpg'),
+      bannerImg1: require('./assets/myface.jpg'),
+      currentSelection: "About Me",
     };
+  },
+  methods: {
   },
 };
 </script>
+
+<style scoped>
+</style>

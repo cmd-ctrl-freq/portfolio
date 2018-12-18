@@ -3,7 +3,16 @@
     <v-layout>
       <v-flex>
         <div v-if="currentSelection === 'About Me'">
-          <v-parallax :src="bannerImg1"></v-parallax>
+          <v-parallax :src="bannerImg1">
+            <v-layout
+            align-center
+            column
+            justify-center
+          >
+            <h1 class="display-2 font-weight-thin mb-3">Banner</h1>
+            <h4 class="subheading">Something explaining this banner!</h4>
+          </v-layout>
+          </v-parallax>
         </div>
         <div v-else-if="currentSelection === 'Projects'">
           Project Parallax
@@ -11,14 +20,6 @@
         <div v-else-if="currentSelection === 'Experience'">
           Experience Parallax
         </div>
-          <v-layout
-            align-center
-            column
-            justify-center
-          >
-            <h1 class="display-2 font-weight-thin mb-3">Banner</h1>
-            <h4 class="subheading">Something explaining this banner!</h4>
-        </v-layout>
           <v-toolbar >
             <v-toolbar-title class="text-uppercase">
               <span>David Fentz</span>

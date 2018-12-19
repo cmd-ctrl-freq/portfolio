@@ -69,8 +69,8 @@
 
 <script>
 import AboutMe from './components/AboutMe.vue';
-import Projects from './components/Experience.vue';
-import Experience from './components/Projects.vue';
+import Experience from './components/Experience.vue';
+import Projects from './components/Projects.vue';
 
 export default {
   name: 'App',
@@ -82,7 +82,7 @@ export default {
   data() {
     return {
       bannerImg1: require('./assets/myface.jpg'),
-      currentSelection: "About Me",
+      currentSelection: 'About Me',
     };
   },
   methods: {

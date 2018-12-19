@@ -16,7 +16,5 @@ export default {};
 </script>
 
 <style>
-#temp {
-  height: 150em;
-}
+
 </style>

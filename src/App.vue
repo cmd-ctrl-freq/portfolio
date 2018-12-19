@@ -9,16 +9,31 @@
             column
             justify-center
           >
-            <h1 class="display-2 font-weight-thin mb-3">Banner</h1>
-            <h4 class="subheading">Something explaining this banner!</h4>
+            <h1 class="text-uppercase display-3">About Me</h1>
           </v-layout>
           </v-parallax>
         </div>
         <div v-else-if="currentSelection === 'Projects'">
-          Project Parallax
+          <v-parallax :src="bannerImg1">
+            <v-layout
+            align-center
+            column
+            justify-center
+          >
+            <h1 class="text-uppercase display-3">Projects</h1>
+          </v-layout>
+          </v-parallax>
         </div>
         <div v-else-if="currentSelection === 'Experience'">
-          Experience Parallax
+          <v-parallax :src="bannerImg1">
+            <v-layout
+            align-center
+            column
+            justify-center
+          >
+            <h1 class="text-uppercase display-3">Experience</h1>
+          </v-layout>
+          </v-parallax>
         </div>
           <v-toolbar >
             <v-toolbar-title class="text-uppercase">
@@ -90,5 +105,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+#test text{
+  font-size: 20em
+}
 </style>

@@ -74,9 +74,11 @@
             <Projects/>
           </v-content>
         </v-card>
-        <v-list>
-          <!-- important links go here -->
-        </v-list>
+        <div class='footer-div'>
+          <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">LinkedIn</a>
+          <a class='footer-links' href="https://github.com/bomjumaku">Github</a>
+          <a class='footer-links' href="https://github.com/bomjumaku/portfolio">This Site's Source Code</a>
+        </div>
       </v-flex>
     </v-layout>
   </v-app>
@@ -105,8 +107,13 @@ export default {
 };
 </script>
 
-<style>
-#test text{
-  font-size: 20em
+<style scoped>
+.footer-div {
+  text-align: center;
+  margin: auto;
+  padding: 2em;
+}
+.footer-links{
+  padding: 2em;
 }
 </style>

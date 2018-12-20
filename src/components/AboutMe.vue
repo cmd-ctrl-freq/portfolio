@@ -5,7 +5,7 @@
       wrap
     >
       <v-flex id='temp' xs12>
-      About Me
+      Well Howdy, it's my about me section!
       </v-flex>
     </v-layout>
   </v-container>

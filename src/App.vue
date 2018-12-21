@@ -89,6 +89,8 @@ import AboutMe from './components/AboutMe.vue';
 import Experience from './components/Experience.vue';
 import Projects from './components/Projects.vue';
 
+window.alert('This website is under construction, updated daily.');
+
 export default {
   name: 'App',
   components: {

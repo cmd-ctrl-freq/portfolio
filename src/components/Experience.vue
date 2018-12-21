@@ -32,6 +32,21 @@ export default {
           description: 'Purdue University',
           details: 'Studied Mechanical Engineering and Film & Video...',
         },
+        {
+          time: '2013',
+          description: 'Summer Kitchen Family Farm',
+          details: 'Fed & milked cows, planted basil, learned to brew mead, hiked in the mountains.',
+        },
+        {
+          time: '2014',
+          description: 'Starbucks & ASU',
+          details: 'Started working as a barista and attending Arizona State University for Software Engineering.',
+        },
+        {
+          time: '2018',
+          description: 'Keyot',
+          details: 'Accepted an offer with Keyot, a small consulting firm, as a Software Developer Consultant. ',
+        },
       ],
     };
   },

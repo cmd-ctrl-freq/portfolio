@@ -28,9 +28,9 @@ export default {
     return {
       History: [
         {
-          time: '1921',
-          description: 'world war 2',
-          details: 'I dun shot down some japs',
+          time: '2011',
+          description: 'Purdue University',
+          details: 'Studied Mechanical Engineering and Film & Video...',
         },
       ],
     };

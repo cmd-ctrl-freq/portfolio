@@ -2,7 +2,8 @@
   <v-app>
     <v-layout>
       <v-flex>
-        <div v-if="currentSelection === 'About Me'">
+        <v-flex xs12>
+          <div v-if="currentSelection === 'About Me'">
           <v-parallax :src="bannerImg1">
             <v-layout
             align-center
@@ -35,6 +36,7 @@
           </v-layout>
           </v-parallax>
         </div>
+        </v-flex>
           <v-toolbar >
             <v-toolbar-title class="text-uppercase">
               <span>David Fentz</span>

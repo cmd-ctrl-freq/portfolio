@@ -43,6 +43,12 @@ export default {
           details: 'Started working as a barista and attending Arizona State University for Software Engineering.',
         },
         {
+          time: 'June-August 2018',
+          description: 'Application Security Internship',
+          details: 'Worked with the amazing AppSec team at Starbucks. I developed a service which scans Github through their public API'
+          +' to detect leaked information. I also learned a bit about web pentesting and Andriod APK hacking.',
+        },
+        {
           time: '2018',
           description: 'Keyot',
           details: 'Accepted an offer with Keyot, a small consulting firm, as a Software Developer Consultant. ',

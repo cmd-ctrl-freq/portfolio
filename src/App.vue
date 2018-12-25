@@ -4,7 +4,7 @@
       <v-flex>
         <v-flex xs12>
           <div v-if="currentSelection === 'About Me'">
-          <v-parallax :src="bannerImg1">
+          <v-parallax height="300" :src="bannerImg1">
             <v-layout
             align-center
             column
@@ -15,7 +15,7 @@
           </v-parallax>
         </div>
         <div v-else-if="currentSelection === 'Projects'">
-          <v-parallax :src="bannerImg1">
+          <v-parallax height="300" :src="bannerImg1">
             <v-layout
             align-center
             column
@@ -26,7 +26,7 @@
           </v-parallax>
         </div>
         <div v-else-if="currentSelection === 'Experience'">
-          <v-parallax :src="bannerImg1">
+          <v-parallax height="300" :src="bannerImg1">
             <v-layout
             align-center
             column

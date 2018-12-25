@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex d-flex xs12 sm6 md4>
         <v-card>
-          <v-image
+          <v-img
           :src="image1" 
           />
         </v-card>

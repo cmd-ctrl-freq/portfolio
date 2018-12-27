@@ -1,9 +1,9 @@
 <template>
   <v-container fluid grid-list-md5>
     <v-layout row wrap>
-      <v-flex 
+      <v-flex
       d-flex xs12 sm6 md4
-      v-for="proj in myProjects" 
+      v-for="proj in myProjects"
       :key="proj.Title">
         <v-card>
           <v-img :src="proj.image"/>
@@ -26,22 +26,22 @@ export default {
     return {
       image1: require('../assets/6223.jpeg'),
       myProjects: [
-      {
-        Title: 'Emotional Baggage',
-        image: image1,
-        description: 'This is an ongoing project, inspired by numerous broken relationships.',
-      },
-      {
-        Title: 'Intellectual Rigor',
-        image: image1,
-        description: 'This project is aimed at makin\' mah brain work good.',
-      },
-      {
-        Title: 'Estrogeneration',
-        image: image1,
-        description: 'This is a project intended to reduce xenoestrogens from my diet/environment',
-      },
-    ],
+        {
+          Title: 'Tensegrity Tower',
+          image: require('../assets/6223.jpeg'),
+          description: 'This Project...',
+        },
+        {
+          Title: 'DIY Fume Extractor',
+          image: require('../assets/6223.jpeg'),
+          description: 'This Project...',
+        },
+        {
+          Title: 'Lab Bench Power Supply',
+          image: require('../assets/6223.jpeg'),
+          description: 'This Project...',
+        },
+      ],
     };
   },
 };
@@ -56,4 +56,3 @@ export default {
   background-color: goldenrod;
 }
 </style>
-

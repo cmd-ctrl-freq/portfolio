@@ -32,11 +32,6 @@ export default {
           description: 'This Project...',
         },
         {
-          Title: 'DIY Fume Extractor',
-          image: require('../assets/FumeExtractorTest.mp4'),
-          description: 'This Project...',
-        },
-        {
           Title: 'Lab Bench Power Supply',
           image: require('../assets/PowerSupply.jpg'),
           description: 'This Project...',

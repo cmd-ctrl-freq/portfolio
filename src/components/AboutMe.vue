@@ -12,7 +12,7 @@
         <v-layout row wrap>
           <v-flex d-flex>
             <v-card >
-              <v-card-text id="Section1">{{ AboutMeMessage }}</v-card-text>
+              <v-card-text>{{ AboutMeMessage }}</v-card-text>
             </v-card>
           </v-flex>
         </v-layout>

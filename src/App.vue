@@ -4,37 +4,40 @@
       <v-flex>
         <v-flex xs12>
           <div v-if="currentSelection === 'About Me'">
-          <v-parallax height="300" :src="bannerImg1">
+            <v-img height="300" :src="bannerImg1">
             <v-layout
             align-center
             column
             justify-center
+            fill-height="300"
           >
-            <h1 class="text-uppercase display-3">About Me</h1>
+            <h1 id="Banner-Message" class="text-uppercase display-3">About Me</h1>
           </v-layout>
-          </v-parallax>
+          </v-img>
         </div>
         <div v-else-if="currentSelection === 'Projects'">
-          <v-parallax height="300" :src="bannerImg1">
+          <v-img height="300" :src="bannerImg1">
             <v-layout
             align-center
             column
             justify-center
+            fill-height="300"
           >
-            <h1 class="text-uppercase display-3">Projects</h1>
+            <h1 id="Banner-Message" class="text-uppercase display-3">Projects</h1>
           </v-layout>
-          </v-parallax>
+          </v-img>
         </div>
         <div v-else-if="currentSelection === 'Experience'">
-          <v-parallax height="300" :src="bannerImg1">
+          <v-img height="300" :src="bannerImg1">
             <v-layout
             align-center
             column
             justify-center
+            fill-height="300"
           >
-            <h1 class="text-uppercase display-3">Experience</h1>
+            <h1 id="Banner-Message" class="text-uppercase display-3">Experience</h1>
           </v-layout>
-          </v-parallax>
+          </v-img>
         </div>
         </v-flex>
           <v-toolbar >
@@ -119,5 +122,8 @@ export default {
 }
 .footer-links{
   padding: 2em;
+}
+#Banner-Message {
+  color: white;
 }
 </style>

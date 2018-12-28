@@ -3,7 +3,7 @@
       <v-container>
         Ideally, I'll add some text here explaining what this section is!
       </v-container>
-      <v-timeline>
+      <v-timeline sm-and-down-dense>
     <v-timeline-item
       v-for="event in History"
       :key="event.description"

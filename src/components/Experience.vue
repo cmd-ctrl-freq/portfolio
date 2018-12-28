@@ -3,7 +3,7 @@
       <v-container>
         Ideally, I'll add some text here explaining what this section is!
       </v-container>
-      <v-timeline sm-and-down-dense>
+      <v-timeline class="dense-sm-and-down">
     <v-timeline-item
       v-for="event in History"
       :key="event.description"
@@ -46,7 +46,7 @@ export default {
           time: 'June-August 2018',
           description: 'Application Security Internship',
           details: 'Worked with the amazing AppSec team at Starbucks. I developed a service which scans Github through their public API'
-          +' to detect leaked information. I also learned a bit about web pentesting and Andriod APK hacking.',
+          + ' to detect leaked information. I also learned a bit about web pentesting and Andriod APK hacking.',
         },
         {
           time: '2018',

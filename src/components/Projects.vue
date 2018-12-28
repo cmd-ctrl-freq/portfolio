@@ -24,21 +24,26 @@
 export default {
   data() {
     return {
-      image1: require('../assets/6223.jpeg'),
+      image1: require('../assets/HoldingCoffeeInSeattle.jpeg'),
       myProjects: [
         {
           Title: 'Tensegrity Tower',
-          image: require('../assets/6223.jpeg'),
+          image: require('../assets/HoldingCoffeeInSeattle.jpeg'),
           description: 'This Project...',
         },
         {
           Title: 'DIY Fume Extractor',
-          image: require('../assets/6223.jpeg'),
+          image: require('../assets/FumeExtractorTest.mp4'),
           description: 'This Project...',
         },
         {
           Title: 'Lab Bench Power Supply',
-          image: require('../assets/6223.jpeg'),
+          image: require('../assets/PowerSupply.jpg'),
+          description: 'This Project...',
+        },
+        {
+          Title: 'RF Replay Attack',
+          image: require('../assets/sdrcap.png'),
           description: 'This Project...',
         },
       ],

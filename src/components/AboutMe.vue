@@ -26,7 +26,7 @@
 export default {
   data() {
     return {
-      image1: require('../assets/6223.jpeg'),
+      image1: require('../assets/HoldingCoffeeInSeattle.jpeg'),
       AboutMeMessage: `Hello there,
       My name is David and you're on my portfolio. This isn't LinkedIn, so I'm going to go into a bit more detail about myself
       , my hobbies, and my experiences. Hopefully a bit more of my personality can shine through here!`,
@@ -39,8 +39,5 @@ export default {
 #Section1{
   font-family: 'Robot';
   font-size: 1.3em;
-}
-#Section1Text{
-  background-color: goldenrod;
 }
 </style>

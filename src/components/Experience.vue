@@ -29,9 +29,8 @@
             color="red lighten-2"
             large
           >
-            <span slot="opposite">{{event.time}}</span>
             <v-card class="elevation-2">
-              <v-card-title class="headline">{{event.description}}</v-card-title>
+              <v-card-title class="headline">{{ event.description }} ({{ event.time }})</v-card-title>
               <v-card-text>
                 {{event.details}}
               </v-card-text>

@@ -4,14 +4,14 @@
       <v-flex d-flex xs12 sm6 md4>
         <v-card>
           <v-img
-          :src="image1" 
+          :src="image1"
           />
         </v-card>
       </v-flex>
       <v-flex d-flex xs12 sm6 md8>
         <v-layout row wrap>
           <v-flex d-flex>
-            <v-card id="Section1Text">
+            <v-card >
               <v-card-text id="Section1">{{ AboutMeMessage }}</v-card-text>
             </v-card>
           </v-flex>

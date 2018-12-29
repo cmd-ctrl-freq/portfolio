@@ -75,9 +75,9 @@ export default {
   font-size: 1.3em;
 }
 #AboutMeMessage{
-  margin: 3em;
+  margin: 2em;
 }
 p{
-  text-indent: 15pt;
+  text-indent: 1.5em;
 }
 </style>

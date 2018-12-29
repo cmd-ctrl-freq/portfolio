@@ -53,21 +53,21 @@
               target="_blank"
               @click='currentSelection="About Me"'
             >
-              <span class="mr-2">About Me</span>
+              <span class="mr-2" xs4>About Me</span>
             </v-btn>
             <v-btn
               flat
               target="_blank"
               @click='currentSelection="Projects"'
             >
-              <span class="mr-2">Projects</span>
+              <span class="mr-2" xs4>Projects</span>
             </v-btn>
             <v-btn
               flat
               target="_blank"
               @click='currentSelection="Experience"'
             >
-              <span class="mr-2">Experience</span>
+              <span class="mr-2" xs4>Experience</span>
             </v-btn>
           </v-toolbar>
         <v-card>

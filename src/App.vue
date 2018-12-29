@@ -40,12 +40,14 @@
           </v-img>
         </div>
         </v-flex>
-          <v-toolbar >
-            <v-toolbar-title class="text-uppercase">
+          <v-toolbar>
+            <v-flex class="hidden-xs-only">
+              <v-toolbar-title class="text-uppercase">
               <span>David Fentz</span>
               <span class="font-weight-light"> Portfolio</span>
-            </v-toolbar-title>
+              </v-toolbar-title>
             <v-spacer></v-spacer>
+            </v-flex>
             <v-btn
               flat
               target="_blank"

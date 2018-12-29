@@ -5,7 +5,7 @@
         align-center
         column
         justify-center>
-        <a href="david_fentz_resume_2018_oct.pdf" download>Looking for my Resume?</a>
+        <a href="downloadable/david_fentz_resume_2018_oct.pdf" download>Looking for my Resume?</a>
         </v-layout>
       </v-container>
       <v-container  class="hidden-sm-and-down">

@@ -5,15 +5,19 @@
       d-flex xs12 sm6 md4
       v-for="proj in myProjects"
       :key="proj.Title">
-        <v-card>
-          <v-img :src="proj.image"/>
+      <v-hover>
+        <v-card
+        slot-scope="{ hover }"
+        :class="`elevation-${hover ? 12 : 2}`">
+          <v-img :src="proj.image" height="300"/>
           <v-card-title primary-title>
           <div>
             <h3 class="headline mb-0">{{ proj.Title }}</h3>
-            <div>{{ proj.description }} What's going on here!?</div>
+            <div>{{ proj.description }}</div>
           </div>
           </v-card-title>
         </v-card>
+      </v-hover>
       </v-flex>
     </v-layout>
   </v-container>
@@ -28,18 +32,19 @@ export default {
       myProjects: [
         {
           Title: 'Tensegrity Tower',
-          image: require('../assets/HoldingCoffeeInSeattle.jpeg'),
-          description: 'This Project...',
+          image: require('../assets/TensegrityTower.png'),
+          description: 'Building a completely useless and mezmerizing luminescent structure.',
         },
         {
           Title: 'Lab Bench Power Supply',
           image: require('../assets/PowerSupply.jpg'),
-          description: 'This Project...',
+          description: 'Managing not to electrocute myself while converting a PC power supply'
+          + ' to a bench power supply.',
         },
         {
           Title: 'RF Replay Attack',
           image: require('../assets/sdrcap.png'),
-          description: 'This Project...',
+          description: 'Capturing Key-FOB RF packets and replaying them at will.',
         },
       ],
     };

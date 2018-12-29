@@ -2,7 +2,7 @@
   <v-app>
     <v-layout>
       <v-flex>
-        <v-flex xs12>
+        <v-flex>
           <div v-if="currentSelection === 'About Me'">
             <v-img height="300" :src="bannerImg1">
             <v-layout

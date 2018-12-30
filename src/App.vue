@@ -83,6 +83,7 @@
             v-on:changeProject='updateProj($event)'/>
           </v-content>
         </v-card>
+        <!-- make this div a <ul> wrapped element on mobile -->
         <div class='footer-div'>
           <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">LinkedIn</a>
           <a class='footer-links' href="https://github.com/bomjumaku">Github</a>

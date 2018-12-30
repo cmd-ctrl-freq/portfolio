@@ -79,7 +79,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #Section1{
   font-family: 'Robot';
   font-size: 1.3em;

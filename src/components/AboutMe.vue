@@ -69,11 +69,7 @@ export default {
 };
 </script>
 
-<style>
-#Section1{
-  font-family: 'Robot';
-  font-size: 1.3em;
-}
+<style scoped>
 #AboutMeMessage{
   margin: 2em;
 }

@@ -7,7 +7,7 @@
       </v-flex>
       <v-flex d-flex xs12 sm6 md8>
         <v-layout row wrap>
-          <v-flex id="AboutMeMessage">
+          <v-flex id="card-text">
               <p>
               Tower Project
               </p>
@@ -33,7 +33,7 @@ export default {
   font-family: 'Robot';
   font-size: 1.3em;
 }
-#AboutMeMessage{
+#card-text{
   margin: 2em;
 }
 p{

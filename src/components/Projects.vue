@@ -24,23 +24,30 @@
       </v-layout>
     </v-container>
     <v-flex v-if="currentProject === 'Tensegrity Tower'">
-      Tensegrity Tower
+      <TowerProject/>
     </v-flex>
     <v-flex v-if="currentProject === 'Lab Bench Power Supply'">
-     Lab Bench Power Supply
+      <PowerSupplyProject/>
     </v-flex>
     <v-flex v-if="currentProject === 'RF Replay Attack'">
-      RF Replay Attack
+      <RFReplayProject/>
     </v-flex>
   </v-flex>
 </template>
 
 
 <script>
-import Project1 from './individual_projects/Project1.vue';
+import TowerProject from './individual_projects/TowerProject.vue';
+import PowerSupplyProject from './individual_projects/PowerSupplyProject.vue';
+import RFReplayProject from './individual_projects/RFReplayProject.vue';
 
 export default {
   props: ['currentProject'],
+  components: {
+    TowerProject,
+    PowerSupplyProject,
+    RFReplayProject,
+  },
   data() {
     return {
       image1: require('../assets/HoldingCoffeeInSeattle.jpeg'),
@@ -64,8 +71,8 @@ export default {
       ],
     };
   },
-  methods:{
-    updateProject(proj){
+  methods: {
+    updateProject(proj) {
       this.$emit('changeProject', proj);
     },
   },

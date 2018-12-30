@@ -78,7 +78,9 @@
             <Experience/>
           </v-content>
           <v-content v-if="currentSelection === 'Projects'">
-            <Projects v-bind:currentProject='currentProject' v-on:changeProject='updateProj($event)'/>
+            <Projects
+            v-bind:currentProject='currentProject'
+            v-on:changeProject='updateProj($event)'/>
           </v-content>
         </v-card>
         <div class='footer-div'>

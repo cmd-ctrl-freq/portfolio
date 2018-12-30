@@ -9,7 +9,7 @@
         <v-layout row wrap>
           <v-flex id="AboutMeMessage">
               <p>
-              Bing Bong your tactic will work!
+              RF Replay Project
               </p>
           </v-flex>
         </v-layout>

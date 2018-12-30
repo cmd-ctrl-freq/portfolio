@@ -2,10 +2,11 @@
   <v-container  fluid grid-list-md5>
     <v-layout row wrap>
       <v-flex d-flex xs12 sm6 md4>
-        <v-card>
+        <v-card
+        height="300">
           <iframe
-          width="100%"
           height="100%"
+          width="100%"
           src="https://www.youtube-nocookie.com/embed/2QDRJ_KfMeQ"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

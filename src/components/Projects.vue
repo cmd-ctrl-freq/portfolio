@@ -10,7 +10,7 @@
           <v-card
           slot-scope="{ hover }"
           :class="`elevation-${hover ? 12 : 2}`"
-          @click='currentProject=proj.Title'>
+          @click='updateProject(proj.Title)'>
             <v-img :src="proj.image" height="300"/>
             <v-card-title primary-title>
             <div>
@@ -40,10 +40,10 @@
 import Project1 from './individual_projects/Project1.vue';
 
 export default {
+  props: ['currentProject'],
   data() {
     return {
       image1: require('../assets/HoldingCoffeeInSeattle.jpeg'),
-      currentProject: 'None',
       myProjects: [
         {
           Title: 'Tensegrity Tower',
@@ -65,8 +65,8 @@ export default {
     };
   },
   methods:{
-    test(){
-      window.alert('Button working');
+    updateProject(proj){
+      this.$emit('changeProject', proj);
     },
   },
 };

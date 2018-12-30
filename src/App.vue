@@ -58,7 +58,7 @@
             <v-btn
               flat
               target="_blank"
-              @click='currentSelection="Projects"'
+              @click='currentSelection = "Projects"; currentProject = "None"'
             >
               <span class="mr-2" xs4>Projects</span>
             </v-btn>
@@ -78,7 +78,7 @@
             <Experience/>
           </v-content>
           <v-content v-if="currentSelection === 'Projects'">
-            <Projects/>
+            <Projects v-bind:currentProject='currentProject' v-on:changeProject='updateProj($event)'/>
           </v-content>
         </v-card>
         <div class='footer-div'>
@@ -96,8 +96,6 @@ import AboutMe from './components/AboutMe.vue';
 import Experience from './components/Experience.vue';
 import Projects from './components/Projects.vue';
 
-window.alert('This website is under construction, updated daily.');
-
 export default {
   name: 'App',
   components: {
@@ -109,7 +107,13 @@ export default {
     return {
       bannerImg1: require('./assets/myface.jpg'),
       currentSelection: 'About Me',
+      currentProject: 'None',
     };
+  },
+  methods: {
+    updateProj(proj) {
+      this.currentProject = proj;
+    },
   },
 };
 </script>

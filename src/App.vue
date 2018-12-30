@@ -111,8 +111,6 @@ export default {
       currentSelection: 'About Me',
     };
   },
-  methods: {
-  },
 };
 </script>
 

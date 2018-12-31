@@ -14,7 +14,6 @@
         </v-card>
       </v-flex>
       <v-flex d-flex xs12 sm6 md8>
-        <v-layout row wrap>
           <v-flex id="Section1">
               <p>
               The video there is the end product of a process that lasted months, and took me
@@ -32,10 +31,8 @@
                  Great Scott Gadgets</a>.
               </p>
           </v-flex>
-        </v-layout>
       </v-flex>
       <v-flex d-flex xs12 sm6 md8>
-        <v-layout row wrap>
           <v-flex id="Section1">
               <p>
                Instead of providing a complete tutorial on how to pull off the attack, I'll go over the general
@@ -53,9 +50,7 @@
                   <a href="https://fccid.io/">databases</a> of all of this information, and there is a TON
                   of information.
                </p>
-              
           </v-flex>
-        </v-layout>
       </v-flex>
       <v-flex d-flex xs12 sm6 md4>
         <v-card
@@ -69,11 +64,18 @@
       <v-flex d-flex xs12 sm6 md4>
         <v-card
         height="300">
-        <v-img :src="sdrcap"/>
+        <v-img :src="image2"/>
         <p id="image-captions" style="text-indent: 0em;">
-        (figure 1)
+        (figure 2)
         </p>
         </v-card>
+      </v-flex>
+      <v-flex d-flex xs12 sm6 md8>
+          <v-flex id="Section1">
+              <p>
+               This will say something.
+              </p>
+          </v-flex>
       </v-flex>
     </v-layout>
   </v-container>
@@ -85,8 +87,7 @@ export default {
   data() {
     return {
       sdrcap: require('../../assets/sdrcap.png'),
-      image1: require('../../assets/sdrcap.png'),
-      image2: require('../../assets/sdrcap.png'),
+      image2: require('../../assets/signal_image2.png'),
     };
   },
 };

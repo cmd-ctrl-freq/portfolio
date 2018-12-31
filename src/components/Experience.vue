@@ -26,7 +26,7 @@
           </v-timeline-item>
         </v-timeline>
       </v-container>
-      <v-container  class="hidden-md-and-up">
+      <v-container id='Timeline' class="hidden-md-and-up">
         <v-timeline dense>
           <v-timeline-item
             v-for="event in History"

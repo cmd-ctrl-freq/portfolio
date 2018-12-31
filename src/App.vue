@@ -40,7 +40,14 @@
           </v-img>
         </div>
         </v-flex>
-          <v-toolbar class="hidden-sm-and-up">
+          <v-toolbar>
+            <v-flex class="hidden-xs-only">
+              <v-toolbar-title class="text-uppercase">
+              <span>David Fentz</span>
+              <span class="font-weight-light"> Portfolio</span>
+              </v-toolbar-title>
+            <v-spacer></v-spacer>
+            </v-flex >
             <v-btn
               flat
               target="_blank"
@@ -63,36 +70,6 @@
               <span xs3>Experience</span>
             </v-btn>
           </v-toolbar>
-          <v-toolbar class="hidden-xs-only">
-            <v-flex>
-              <v-toolbar-title class="text-uppercase">
-              <span>David Fentz</span>
-              <span class="font-weight-light"> Portfolio</span>
-              </v-toolbar-title>
-            <v-spacer></v-spacer>
-            </v-flex >
-            <v-btn
-              flat
-              target="_blank"
-              @click='currentSelection="About Me"'
-            >
-              <span class="mr-2" xs4>About Me</span>
-            </v-btn>
-            <v-btn
-              flat
-              target="_blank"
-              @click='currentSelection = "Projects"; currentProject = "None"'
-            >
-              <span class="mr-2" xs4>Projects</span>
-            </v-btn>
-            <v-btn
-              flat
-              target="_blank"
-              @click='currentSelection="Experience"'
-            >
-              <span class="mr-2" xs4>Experience</span>
-            </v-btn>
-          </v-toolbar>
         <v-card>
           <v-content v-if="currentSelection === 'About Me'">
             <AboutMe/>
@@ -107,12 +84,12 @@
           </v-content>
         </v-card>
         <!-- make this div a <ul> wrapped element on mobile -->
-        <div id="footer-div" class="hidden-sm-and-down">
+        <div id="footer-div" class="hidden-xs-only">
           <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">LinkedIn</a>
           <a class='footer-links' href="https://github.com/bomjumaku">Github</a>
           <a class='footer-links' href="https://github.com/bomjumaku/portfolio">This Site's Source Code</a>
         </div>
-        <div id="footer-div" class="hidden-md-and-up">
+        <div id="footer-div" class="hidden-sm-and-up">
           <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">LinkedIn</a>
           <br>
           <a class='footer-links' href="https://github.com/bomjumaku">Github</a>

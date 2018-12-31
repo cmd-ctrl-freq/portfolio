@@ -3,6 +3,7 @@
     <v-layout row wrap>
       <v-flex d-flex xs12 sm6 md4>
         <v-card
+        id="card-with-image"
         height="300">
           <iframe
           width="100%"
@@ -36,6 +37,7 @@
       </v-flex>
       <v-flex d-flex xs12 sm6 md4>
         <v-card
+        id="card-with-image"
         height="300">
           <iframe
           width="100%"
@@ -84,6 +86,9 @@ export default {
 }
 #image-captions{
   text-align: center;
+}
+#card-with-image{
+  margin-bottom: 5px;
 }
 p{
   text-indent: 1.5em;

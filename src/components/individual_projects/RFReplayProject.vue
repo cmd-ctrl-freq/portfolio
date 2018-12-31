@@ -54,8 +54,12 @@
       </v-flex>
       <v-flex d-flex xs12 sm6 md4>
         <v-card
+        id="card-with-image"
         height="300">
-        <v-img :src="sdrcap"/>
+        <v-img
+        :src="sdrcap"
+        width="100%"
+        height="90%"/>
         <p id="image-captions" style="text-indent: 0em;">
         (figure 1)
         </p>
@@ -63,8 +67,12 @@
       </v-flex>
       <v-flex d-flex xs12 sm6 md4>
         <v-card
+        id="card-with-image"
         height="300">
-        <v-img :src="image2"/>
+        <v-img
+        :src="image2"
+        width="100%"
+        height="90%"/>
         <p id="image-captions" style="text-indent: 0em;">
         (figure 2)
         </p>
@@ -138,6 +146,9 @@ export default {
 }
 #image-captions{
   text-align: center;
+}
+#card-with-image{
+  margin-bottom: 5px;
 }
 p{
   text-indent: 1.5em;

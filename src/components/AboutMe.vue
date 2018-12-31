@@ -10,7 +10,7 @@
       </v-flex>
       <v-flex d-flex xs12 sm6 md8>
         <v-layout row wrap>
-          <v-flex id="AboutMeMessage">
+          <v-flex id="Section1">
               <p>
               Hello there, My name is David and (if you haven't noticed) you're on my portfolio.
                This isn't LinkedIn,
@@ -70,6 +70,9 @@ export default {
 </script>
 
 <style scoped>
+#Section1{
+  margin: 1em;
+}
 p{
   text-indent: 1.5em;
 }

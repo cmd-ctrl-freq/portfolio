@@ -1,9 +1,11 @@
 <template>
-  <v-container  fluid grid-list-md5>
-    <v-layout row wrap>
-      <v-flex d-flex xs12 sm6 md4>
+  <v-container >
+    <v-layout wrap>
+      <v-flex d-flex>
         <v-card
-        height="300">
+        id="card-with-image"
+        height="300"
+        >
           <iframe
           width="100%"
           height="100%"
@@ -16,7 +18,7 @@
           </p>
         </v-card>
       </v-flex>
-      <v-flex d-flex xs12 sm6 md8>
+      <v-flex d-flex>
           <v-flex id="Section1">
               <p>
               I have been fascinated with <a href="https://en.wikipedia.org/wiki/Tensegrity">
@@ -41,8 +43,9 @@
               </p>
           </v-flex>
       </v-flex>
-      <v-flex d-flex xs12 sm6 md4>
+      <v-flex d-flex xs12 sm12 md12>
         <v-card
+        id="card-with-image"
         height="300">
           <iframe
           width="100%"
@@ -56,7 +59,7 @@
           </p>
         </v-card>
       </v-flex>
-      <v-flex d-flex xs12 sm6 md8>
+      <v-flex d-flex>
           <v-flex id="Section1">
               <p>
               Figure 2 shows the second test. The tower, once built, was to be 4 stories
@@ -65,8 +68,9 @@
               </p>
           </v-flex>
       </v-flex>
-      <v-flex d-flex xs12 sm6 md4>
+      <v-flex d-flex>
         <v-card
+        id="card-with-image"
         height="300">
           <iframe
           width="100%"
@@ -80,7 +84,7 @@
           </p>
         </v-card>
       </v-flex>
-      <v-flex d-flex xs12 sm6 md8>
+      <v-flex d-flex>
           <v-flex id="Section1">
               <p>
               Figure 3 is really a combination of the first two tests, just to verify that
@@ -89,8 +93,9 @@
               </p>
           </v-flex>
       </v-flex>
-      <v-flex d-flex xs12 sm6 md4>
+      <v-flex d-flex>
         <v-card
+        id="card-with-image"
         height="300">
           <iframe
           width="100%"
@@ -104,7 +109,7 @@
           </p>
         </v-card>
       </v-flex>
-      <v-flex d-flex xs12 sm6 md8>
+      <v-flex d-flex>
           <v-flex id="Section1">
               <p>
               Figure 4 is the final product. The code linked above is exactly what you see running
@@ -135,6 +140,12 @@ export default {
 }
 #image-captions{
   text-align: center;
+}
+#card-with-image{
+  margin-bottom: 10px;
+}
+#image-flex-box{
+  align-items: center;
 }
 p{
   text-indent: 1.5em;

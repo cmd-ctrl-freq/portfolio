@@ -40,14 +40,37 @@
           </v-img>
         </div>
         </v-flex>
-          <v-toolbar>
-            <v-flex class="hidden-xs-only">
+          <v-toolbar class="hidden-sm-and-up">
+            <v-btn
+              flat
+              target="_blank"
+              @click='currentSelection="About Me"'
+            >
+              <span xs3>About Me</span>
+            </v-btn>
+            <v-btn
+              flat
+              target="_blank"
+              @click='currentSelection = "Projects"; currentProject = "None"'
+            >
+              <span xs3>Projects</span>
+            </v-btn>
+            <v-btn
+              flat
+              target="_blank"
+              @click='currentSelection="Experience"'
+            >
+              <span xs3>Experience</span>
+            </v-btn>
+          </v-toolbar>
+          <v-toolbar class="hidden-xs-only">
+            <v-flex>
               <v-toolbar-title class="text-uppercase">
               <span>David Fentz</span>
               <span class="font-weight-light"> Portfolio</span>
               </v-toolbar-title>
             <v-spacer></v-spacer>
-            </v-flex>
+            </v-flex >
             <v-btn
               flat
               target="_blank"
@@ -84,9 +107,16 @@
           </v-content>
         </v-card>
         <!-- make this div a <ul> wrapped element on mobile -->
-        <div class='footer-div'>
+        <div id="footer-div" class="hidden-sm-and-down">
           <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">LinkedIn</a>
           <a class='footer-links' href="https://github.com/bomjumaku">Github</a>
+          <a class='footer-links' href="https://github.com/bomjumaku/portfolio">This Site's Source Code</a>
+        </div>
+        <div id="footer-div" class="hidden-md-and-up">
+          <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">LinkedIn</a>
+          <br>
+          <a class='footer-links' href="https://github.com/bomjumaku">Github</a>
+          <br>
           <a class='footer-links' href="https://github.com/bomjumaku/portfolio">This Site's Source Code</a>
         </div>
       </v-flex>
@@ -122,7 +152,7 @@ export default {
 </script>
 
 <style scoped>
-.footer-div {
+#footer-div {
   text-align: center;
   margin: auto;
   padding: 2em;

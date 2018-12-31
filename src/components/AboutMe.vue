@@ -70,9 +70,6 @@ export default {
 </script>
 
 <style scoped>
-#AboutMeMessage{
-  margin: 2em;
-}
 p{
   text-indent: 1.5em;
 }

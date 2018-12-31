@@ -8,7 +8,7 @@
         <a href="downloadable/david_fentz_resume_2018_oct.pdf" download>Looking for my Resume?</a>
         </v-layout>
       </v-container>
-      <v-container  class="hidden-sm-and-down">
+      <v-container id='Timeline'  class="hidden-sm-and-down">
         <v-timeline>
           <v-timeline-item
             v-for="event in History"
@@ -103,5 +103,10 @@ export default {
 </script>
 
 <style>
-
+#Timeline{
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+}
 </style>

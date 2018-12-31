@@ -80,11 +80,4 @@ export default {
 </script>
 
 <style scoped>
-#Section1{
-  font-family: 'Robot';
-  font-size: 1.3em;
-}
-#Section1Text{
-  background-color: goldenrod;
-}
 </style>

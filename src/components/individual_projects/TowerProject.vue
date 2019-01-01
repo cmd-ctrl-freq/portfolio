@@ -1,10 +1,10 @@
 <template>
-  <v-container >
-    <v-layout wrap>
-      <v-flex d-flex>
+  <v-container>
+    <v-layout row wrap justify-center>
+      <v-flex lg8 md8 sm10>
         <v-card
         id="card-with-image"
-        height="300"
+        height="500"
         >
           <iframe
           width="100%"
@@ -18,35 +18,34 @@
           </p>
         </v-card>
       </v-flex>
-      <v-flex d-flex>
-          <v-flex id="Section1">
-              <p>
-              I have been fascinated with <a href="https://en.wikipedia.org/wiki/Tensegrity">
-              tensegrity</a> ever since I first cracked open my
-              copy of <a href="https://www.amazon.com/Synergetics-Explorations-Geometry-Buckminster-Fuller/dp/002541870X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1546279637&sr=8-2">
-              Synergetics</a> by Buckminster Fuller. If you've never encountered his work,
-              and you're courageous I highly reccomend this tome. It is, hands down, the most
-              important work of literature that I have ever (partailly) read. I'd put it on the
-              same level as the Bhagavad Gita.
-              </p>
-              <p>
-                I really wanted to explore the possibilities of building tensegrity structures,
-                but I also wanted to play with microcontrollers and learn to solder as I had
-                just gotten my Hakko FX-888D(and I am still in love years later). So, why not
-                combine the two interests? The video in figure 1 shows my first test of
-                <a href="https://github.com/bomjumaku/Tensegrity_Tower/blob/master/main.c">
-                the C code which is running the animations</a>.
-              </p>
-              <p>
-                This was really just to ensure that I was driving the LEDs properly becore soldering
-                on the other lengths.
-              </p>
-          </v-flex>
+      <v-flex lg8 md8 sm10 id="Section1">
+        <p>
+        I have been fascinated with <a href="https://en.wikipedia.org/wiki/Tensegrity">
+        tensegrity</a> ever since I first cracked open my
+        copy of <a href="https://www.amazon.com/Synergetics-Explorations-Geometry-Buckminster-Fuller/dp/002541870X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1546279637&sr=8-2">
+        Synergetics</a> by Buckminster Fuller. If you've never encountered his work,
+        and you're courageous I highly reccomend this tome. It is, hands down, the most
+        important work of literature that I have ever (partailly) read. I'd put it on the
+        same level as the Bhagavad Gita.
+        </p>
+        <p>
+          I really wanted to explore the possibilities of building tensegrity structures,
+          but I also wanted to play with microcontrollers and learn to solder as I had
+          just gotten my Hakko FX-888D(and I am still in love years later). So, why not
+          combine the two interests? The video in figure 1 shows my first test of
+          <a href="https://github.com/bomjumaku/Tensegrity_Tower/blob/master/main.c">
+          the C code which is running the animations</a>.
+        </p>
+        <p>
+          This was really just to ensure that I was driving the LEDs properly becore soldering
+          on the other lengths.
+        </p>
       </v-flex>
-      <v-flex d-flex xs12 sm12 md12>
+      
+      <v-flex lg8 md8 sm10>
         <v-card
         id="card-with-image"
-        height="300">
+        height="500">
           <iframe
           width="100%"
           height="100%"
@@ -59,19 +58,17 @@
           </p>
         </v-card>
       </v-flex>
-      <v-flex d-flex>
-          <v-flex id="Section1">
-              <p>
-              Figure 2 shows the second test. The tower, once built, was to be 4 stories
-               tall, requiring 4 segments of LEDs. I needed to verify that I could run
-               animations across all 4 segments.
-              </p>
-          </v-flex>
+      <v-flex lg8 md8 sm10 id="Section1">
+          <p>
+          Figure 2 shows the second test. The tower, once built, was to be 4 stories
+            tall, requiring 4 segments of LEDs. I needed to verify that I could run
+            animations across all 4 segments.
+          </p>
       </v-flex>
-      <v-flex d-flex>
+      <v-flex lg8 md8 sm10>
         <v-card
         id="card-with-image"
-        height="300">
+        height="500">
           <iframe
           width="100%"
           height="100%"
@@ -84,19 +81,17 @@
           </p>
         </v-card>
       </v-flex>
-      <v-flex d-flex>
-          <v-flex id="Section1">
-              <p>
-              Figure 3 is really a combination of the first two tests, just to verify that
-              all my connections were mechanically and electrically stable before building
-              the tower and attaching the LED strips.
-              </p>
-          </v-flex>
+      <v-flex lg8 md8 sm10 id="Section1">
+          <p>
+          Figure 3 is really a combination of the first two tests, just to verify that
+          all my connections were mechanically and electrically stable before building
+          the tower and attaching the LED strips.
+          </p>
       </v-flex>
-      <v-flex d-flex>
+      <v-flex lg8 md8 sm10>
         <v-card
         id="card-with-image"
-        height="300">
+        height="500">
           <iframe
           width="100%"
           height="100%"
@@ -109,16 +104,14 @@
           </p>
         </v-card>
       </v-flex>
-      <v-flex d-flex>
-          <v-flex id="Section1">
-              <p>
-              Figure 4 is the final product. The code linked above is exactly what you see running
-              in this video. Building the tower and learning how to tie a
-              <a href="https://en.wikipedia.org/wiki/Trucker%27s_hitch">truker's hitch</a>
-              was 1/2 of the challenge and the fun. Unfortunately I didn't capture any of
-              the knotty business on video.
-              </p>
-          </v-flex>
+      <v-flex lg8 md8 sm10 id="Section1">
+          <p>
+          Figure 4 is the final product. The code linked above is exactly what you see running
+          in this video. Building the tower and learning how to tie a
+          <a href="https://en.wikipedia.org/wiki/Trucker%27s_hitch">truker's hitch</a>
+          was 1/2 of the challenge and the fun. Unfortunately I didn't capture any of
+          the knotty business on video.
+          </p>
       </v-flex>
     </v-layout>
   </v-container>
@@ -143,9 +136,6 @@ export default {
 }
 #card-with-image{
   margin-bottom: 10px;
-}
-#image-flex-box{
-  align-items: center;
 }
 p{
   text-indent: 1.5em;

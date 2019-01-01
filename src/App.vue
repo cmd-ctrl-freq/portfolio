@@ -110,19 +110,36 @@
             v-on:changeProject='updateProj($event)'/>
           </v-content>
         </v-card>
-        <!-- make this div a <ul> wrapped element on mobile -->
-        <div id="footer-div" class="hidden-xs-only">
-          <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">LinkedIn</a>
-          <a class='footer-links' href="https://github.com/bomjumaku">Github</a>
-          <a class='footer-links' href="https://github.com/bomjumaku/portfolio">This Site's Source Code</a>
-        </div>
-        <div id="footer-div" class="hidden-sm-and-up">
-          <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">LinkedIn</a>
-          <br>
-          <a class='footer-links' href="https://github.com/bomjumaku">Github</a>
-          <br>
-          <a class='footer-links' href="https://github.com/bomjumaku/portfolio">This Site's Source Code</a>
-        </div>
+        <v-footer
+          height="auto"
+          color="primary lighten-1"
+        >
+          <v-layout
+            justify-center
+            row
+            wrap
+          >
+          <a class='footer-links' href="https://www.linkedin.com/in/davidfentz/">
+            <v-btn color="white" flat round>LinkedIn</v-btn>
+          </a>
+          <a class='footer-links' href="https://github.com/bomjumaku">
+            <v-btn color="white" flat round>Github</v-btn>
+          </a>
+          <a class='footer-links' href="https://github.com/bomjumaku/portfolio">
+            <v-btn color="white" flat round>This Site's Source Code</v-btn>
+          </a>
+            <v-flex
+              primary
+              lighten-2
+              py-3
+              text-xs-center
+              white--text
+              xs12
+            >
+              &copy;2018 — <strong>David Fentz</strong>
+            </v-flex>
+          </v-layout>
+        </v-footer>
       </v-flex>
     </v-layout>
   </v-app>
@@ -156,14 +173,6 @@ export default {
 </script>
 
 <style scoped>
-#footer-div {
-  text-align: center;
-  margin: auto;
-  padding: 2em;
-}
-.footer-links{
-  padding: 2em;
-}
 #Banner-Message {
   color: white;
 }

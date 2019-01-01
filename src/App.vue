@@ -46,29 +46,56 @@
               <span>David Fentz</span>
               <span class="font-weight-light"> Portfolio</span>
               </v-toolbar-title>
-            <v-spacer></v-spacer>
             </v-flex >
-            <v-btn
-              flat
-              target="_blank"
-              @click='currentSelection="About Me"'
-            >
-              <span xs3>About Me</span>
-            </v-btn>
-            <v-btn
-              flat
-              target="_blank"
-              @click='currentSelection = "Projects"; currentProject = "None"'
-            >
-              <span xs3>Projects</span>
-            </v-btn>
-            <v-btn
-              flat
-              target="_blank"
-              @click='currentSelection="Experience"'
-            >
-              <span xs3>Experience</span>
-            </v-btn>
+            <v-spacer></v-spacer>
+            <v-flex class="hidden-sm-and-up">
+              <v-toolbar-items>
+                <v-btn
+                flat
+                target="_blank"
+                @click='currentSelection="About Me"'
+                >
+                <span>About Me</span>
+                </v-btn>
+                <v-btn
+                  flat
+                  target="_blank"
+                  @click='currentSelection = "Projects"; currentProject = "None"'
+                >
+                  <span>Projects</span>
+                </v-btn>
+                <v-btn
+                  flat
+                  target="_blank"
+                  @click='currentSelection="Experience"'
+                >
+                  <span>Experience</span>
+                </v-btn>
+            </v-toolbar-items>
+          </v-flex>
+          <v-toolbar-items class="hidden-xs-only">
+                <v-btn
+                flat
+                target="_blank"
+                @click='currentSelection="About Me"'
+                >
+                <span>About Me</span>
+                </v-btn>
+                <v-btn
+                  flat
+                  target="_blank"
+                  @click='currentSelection = "Projects"; currentProject = "None"'
+                >
+                  <span>Projects</span>
+                </v-btn>
+                <v-btn
+                  flat
+                  target="_blank"
+                  @click='currentSelection="Experience"'
+                >
+                  <span>Experience</span>
+                </v-btn>
+            </v-toolbar-items>
           </v-toolbar>
         <v-card>
           <v-content v-if="currentSelection === 'About Me'">

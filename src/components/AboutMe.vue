@@ -1,14 +1,14 @@
 <template>
   <v-container fluid grid-list-md5>
     <v-layout row wrap>
-      <v-flex d-flex xs12 sm6 md4>
+      <v-flex d-flex xs12 sm4 md4>
         <v-card>
           <v-img
           :src="image1"
           />
         </v-card>
       </v-flex>
-      <v-flex d-flex xs12 sm6 md8>
+      <v-flex d-flex xs12 sm8 md8>
         <v-layout row wrap>
           <v-flex id="Section1">
               <p>

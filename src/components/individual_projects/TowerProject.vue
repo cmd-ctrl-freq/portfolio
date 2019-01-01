@@ -24,8 +24,8 @@
         tensegrity</a> ever since I first cracked open my
         copy of <a href="https://www.amazon.com/Synergetics-Explorations-Geometry-Buckminster-Fuller/dp/002541870X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1546279637&sr=8-2">
         Synergetics</a> by Buckminster Fuller. If you've never encountered his work,
-        and you're courageous I highly reccomend this tome. It is, hands down, the most
-        important work of literature that I have ever (partailly) read. I'd put it on the
+        and you're courageous I highly recommend this tome. It is, hands down, the most
+        important work of literature that I have ever (partially) read. I'd put it on the
         same level as the Bhagavad Gita.
         </p>
         <p>
@@ -37,7 +37,7 @@
           the C code which is running the animations</a>.
         </p>
         <p>
-          This was really just to ensure that I was driving the LEDs properly becore soldering
+          This was really just to ensure that I was driving the LEDs properly before soldering
           on the other lengths.
         </p>
       </v-flex>

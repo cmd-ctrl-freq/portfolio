@@ -85,7 +85,7 @@ export default {
           description: 'Application Security Internship',
           details: 'The culmination of all of that work was my internship with the Application Security team at Starbucks. '
           + 'This was an amazing experience inside and outside of the office. I made life-long friends and professional '
-          + 'contacts that I still talk with today. I learned the basics of penetration testing web applications and Andriod '
+          + 'contacts that I still talk with today. I learned the basics of penetration testing web applications and Android '
           + 'applications. During this period of time I also built the coolest thing to date, a service/tool which scans GitHub '
           + 'for leaked information. The cherry on top... it actually returns repositories containing sensitive information.',
         },

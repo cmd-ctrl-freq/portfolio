@@ -93,8 +93,8 @@
       <v-flex lg8 md8 sm10 id="Section1">
       <p>
         SDR# is the program that I used to listen to the Fob signal originally. It's free and
-        with a lot of very cheap recieving antennas out of the box. This program can capture 
-        data from the reciever and record it as a .wav file. The great thing about this is 
+        with a lot of very cheap receiving antennas out of the box. This program can capture 
+        data from the receiver and record it as a .wav file. The great thing about this is 
         we can just open it up in <a href="https://www.audacityteam.org/">Audacity</a> 
         and investigate/manipulate the packet manually. 
       </p>
@@ -107,8 +107,8 @@
       <p> 
         You can see that there is this span of short pulses at the beginning of the packet (figure 2 is
         actually showing three instances of the same packet sent at different times) which is suspiciously 
-        long. This is for synchronization of the Fob transmitter and the vehicle's reciever. It's impossible
-        to determing where the data starts without comparing 2 or more unique packets with eachother. 
+        long. This is for synchronization of the Fob transmitter and the vehicle's receiver. It's impossible
+        to determining where the data starts without comparing 2 or more unique packets with each other. 
       </p>
       <p>
         The last step of this attack on my vehicle (which does not use

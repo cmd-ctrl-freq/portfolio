@@ -41,7 +41,7 @@
                   are grown, processed, transported, served, and consumed.
                 </li>
                 <li> I love hacking. My next career goal is to become a penetration tester for
-                  an independant security firm or a red teamer for a larger business. I am so
+                  an independent security firm or a red teamer for a larger business. I am so
                   interested in how computer (and physical) systems are intended to operate,
                   and how they fail to do so.
                 </li>

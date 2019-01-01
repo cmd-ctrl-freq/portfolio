@@ -55,7 +55,7 @@ export default {
         {
           Title: 'Tensegrity Tower',
           image: require('../assets/TensegrityTower.png'),
-          description: 'Building a completely useless and mezmerizing luminescent structure.',
+          description: 'Building a completely useless and mesmerizing luminescent structure.',
         },
         {
           Title: 'Lab Bench Power Supply',

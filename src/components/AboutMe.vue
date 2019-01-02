@@ -2,7 +2,7 @@
   <v-container fluid grid-list-md5>
     <v-layout row wrap>
       <v-flex d-flex xs12 sm4 md4>
-        <v-card>
+        <v-card flat>
           <v-img
           :src="image1"
           />

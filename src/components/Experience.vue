@@ -5,7 +5,7 @@
         align-center
         column
         justify-center>
-        <a href="downloadable/david_fentz_resume_2018_oct.pdf" download>Looking for my Resume?</a>
+        <a hidden :href="myResume" download>Looking for my Resume?</a>
         </v-layout>
       </v-container>
       <v-container id='Timeline' class="hidden-sm-and-down">
@@ -52,6 +52,7 @@
 export default {
   data() {
     return {
+      // myResume: require('../assets/DavidFentzResume.pdf'),
       History: [
         {
           time: '2011',

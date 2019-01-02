@@ -176,4 +176,7 @@ export default {
 #Banner-Message {
   color: white;
 }
+a{
+  text-emphasis: none;
+}
 </style>

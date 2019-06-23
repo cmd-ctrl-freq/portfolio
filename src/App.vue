@@ -136,7 +136,7 @@
               white--text
               xs12
             >
-              &copy;2018 — <strong>David Fentz</strong>
+              &copy; <strong>David Fentz</strong> Last Push: {{push_date}}
             </v-flex>
           </v-layout>
         </v-footer>
@@ -162,6 +162,7 @@ export default {
       bannerImg1: require('./assets/myface.jpg'),
       currentSelection: 'About Me',
       currentProject: 'None',
+      push_date: 6/23/2019,
     };
   },
   methods: {

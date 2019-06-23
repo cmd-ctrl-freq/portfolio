@@ -162,7 +162,7 @@ export default {
       bannerImg1: require('./assets/myface.jpg'),
       currentSelection: 'About Me',
       currentProject: 'None',
-      push_date: 6/23/2019,
+      push_date: "6/23/2019",
     };
   },
   methods: {

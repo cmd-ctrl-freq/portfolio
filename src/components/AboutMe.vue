@@ -66,8 +66,8 @@
 export default {
   data() {
     return {
-      image1: require('../assets/HoldingCoffeeInSeattle.jpeg'),
-      // image1: require("../assets/bigfoot.jpg")
+      // image1: require('../assets/HoldingCoffeeInSeattle.jpeg'),
+      image1: require("../assets/bigfoot.jpg")
     };
   }
 };
